@@ -10,8 +10,7 @@ RUN mkdir -p /var/www/html
 WORKDIR /var/www/html
 
 COPY .artifakt .artifakt/
-RUN chmod +x .artifakt/build.sh
-RUN .artifakt/build.sh
+RUN . .artifakt/build.sh
 
 USER dockeruser
 
